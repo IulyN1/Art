@@ -1,9 +1,19 @@
 /* src/components/Introduction.css */
-.introduction {
+.section {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+}
+
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: orange;
+	transform-origin: 0%;
 }
 
 .fullscreen-title {
@@ -30,6 +40,7 @@
 }
 
 .definition {
+	position: relative;
 	color: #007acc;
 	flex: 1 1 45%;
 	padding: 1rem;
@@ -56,5 +67,5 @@
 .definition.mine span {
 	color: #007acc;
 	font-weight: bold;
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 }

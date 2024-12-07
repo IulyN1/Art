@@ -4,15 +4,22 @@ import './Contexts.css';
 
 const Contexts = () => {
 	return (
-		<section className="introduction">
-			<motion.h1
-				className="center-title"
-				initial={{ scale: 0.8 }}
-				whileInView={{ scale: 1 }}
+		<section className="section">
+			<motion.div
+				className="fullscreen-title"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
 				transition={{ duration: 1 }}
 			>
-				Art in different contexts
-			</motion.h1>
+				<motion.h1
+					className="center-title"
+					initial={{ scale: 0.8 }}
+					whileInView={{ scale: 1 }}
+					transition={{ duration: 1 }}
+				>
+					Art in different contexts
+				</motion.h1>
+			</motion.div>
 			<motion.div
 				className="definition-container"
 				initial={{ opacity: 0, translateY: 50 }}
@@ -56,18 +63,25 @@ const Contexts = () => {
 					</span>
 				</div>
 			</motion.div>
-			<motion.h1
-				className="center-title"
-				initial={{ scale: 0.8 }}
-				whileInView={{ scale: 1 }}
+			<motion.div
+				className="fullscreen-title"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
 				transition={{ duration: 1 }}
 			>
-				Impossible Contexts
-			</motion.h1>
+				<motion.h1
+					className="center-title"
+					initial={{ scale: 0.8 }}
+					whileInView={{ scale: 1 }}
+					transition={{ duration: 1 }}
+				>
+					Impossible Contexts
+				</motion.h1>
+			</motion.div>
 			<motion.h2 initial={{ scale: 0.7 }} whileInView={{ scale: 0.9 }} transition={{ duration: 1 }}>
 				I believe that every piece of creation and everything that surrounds us is a form of art… Therefore I
-				cannot think of any <i>&quot;impossible&quot;</i> context for art, but what does AI think about it? So I
-				asked ChatGPT and it gave me the following 2 “impossible” context:
+				cannot think of any <i>&quot;impossible&quot;</i> context for art, but what does AI think about it? So,
+				I asked ChatGPT and it gave me the following 2 <i>&quot;impossible&quot;</i> context:
 			</motion.h2>
 			<motion.div
 				className="definition-container"

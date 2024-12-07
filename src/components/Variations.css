@@ -1,1 +1,9 @@
 /* src/components/Variations.css */
+.emphasis {
+	font-size: 1.7rem;
+}
+
+.red-emphasis {
+	color: red;
+	font-size: 1.5rem;
+}
