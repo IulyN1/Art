@@ -1,8 +1,11 @@
 // src/components/Contexts.jsx
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import './Contexts.css';
 
 const Contexts = () => {
+	const { scrollYProgress } = useScroll();
+	const rotate = useTransform(scrollYProgress, [0.5, 0.8], ['0deg', '10deg']);
+
 	return (
 		<section className="section">
 			<motion.div
@@ -22,6 +25,7 @@ const Contexts = () => {
 			</motion.div>
 			<motion.div
 				className="definition-container"
+				style={{ rotate }}
 				initial={{ opacity: 0, translateY: 50 }}
 				whileInView={{ opacity: 1, translateY: 0 }}
 				transition={{ duration: 1 }}
@@ -81,7 +85,7 @@ const Contexts = () => {
 			<motion.h2 initial={{ scale: 0.7 }} whileInView={{ scale: 0.9 }} transition={{ duration: 1 }}>
 				I believe that every piece of creation and everything that surrounds us is a form of art… Therefore I
 				cannot think of any <i>&quot;impossible&quot;</i> context for art, but what does AI think about it? So,
-				I asked ChatGPT and it gave me the following 2 <i>&quot;impossible&quot;</i> context:
+				I asked ChatGPT and it gave me the following 2 <i>&quot;impossible&quot;</i> contexts:
 			</motion.h2>
 			<motion.div
 				className="definition-container"

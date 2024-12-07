@@ -29,7 +29,9 @@ const Variations = () => {
 			>
 				<div className="definition">
 					<a href="https://www.merriam-webster.com/dictionary/artist" target="_blank" rel="noreferrer">
-						<strong>Artist: </strong>
+						<strong>
+							<i>Artist: </i>
+						</strong>
 					</a>
 					<span>the person who creates art</span>
 				</div>
@@ -39,7 +41,9 @@ const Variations = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<strong>Artistic: </strong>
+						<strong>
+							<i>Artistic: </i>
+						</strong>
 					</a>
 					<span>skilfully and attractively made</span>
 				</div>
@@ -49,13 +53,17 @@ const Variations = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<strong>Artful: </strong>
+						<strong>
+							<i>Artful: </i>
+						</strong>
 					</a>
 					<span>clever and skilful</span>
 				</div>
 				<div className="definition">
 					<a href="https://www.merriam-webster.com/dictionary/artless" target="_blank" rel="noreferrer">
-						<strong>Artless: </strong>
+						<strong>
+							<i>Artless: </i>
+						</strong>
 					</a>
 					<span>lacking art, knowledge, or skill</span>
 				</div>
@@ -65,7 +73,9 @@ const Variations = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<strong>Artisan: </strong>
+						<strong>
+							<i>Artisan: </i>
+						</strong>
 					</a>
 					<span>someone who does skilled work with their hands</span>
 				</div>
