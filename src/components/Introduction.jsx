@@ -11,6 +11,7 @@ const Introduction = () => {
 	});
 	const { scrollYProgress } = useScroll();
 	const scale = useTransform(scrollYProgress, [0, 0.1], [1, 1.5]);
+	const skew = useTransform(scrollYProgress, [0.18, 0.3], ['0deg, 0deg', '10deg, 10deg']);
 
 	return (
 		<>
@@ -88,6 +89,7 @@ const Introduction = () => {
 				</motion.div>
 				<motion.div
 					className="definition-container"
+					style={{ skew }}
 					initial={{ opacity: 0, translateY: 50 }}
 					whileInView={{ opacity: 1, translateY: 0 }}
 					transition={{ duration: 1 }}
