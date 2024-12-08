@@ -1,1 +1,12 @@
 /* src/components/Contexts.css */
+.image-container div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.image-container div .definition {
+	max-width: 350px;
+}
