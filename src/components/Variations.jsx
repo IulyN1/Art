@@ -45,7 +45,9 @@ const Variations = () => {
 							<i>Artistic: </i>
 						</strong>
 					</a>
-					<span>skilfully and attractively made</span>
+					<span>
+						<i>skilfully</i> and attractively made
+					</span>
 				</div>
 				<div className="definition">
 					<a
@@ -57,7 +59,9 @@ const Variations = () => {
 							<i>Artful: </i>
 						</strong>
 					</a>
-					<span>clever and skilful</span>
+					<span>
+						clever and <i>skilful</i>
+					</span>
 				</div>
 				<div className="definition">
 					<a href="https://www.merriam-webster.com/dictionary/artless" target="_blank" rel="noreferrer">
@@ -65,7 +69,9 @@ const Variations = () => {
 							<i>Artless: </i>
 						</strong>
 					</a>
-					<span>lacking art, knowledge, or skill</span>
+					<span>
+						lacking art, knowledge, or <i>skill</i>
+					</span>
 				</div>
 				<div className="definition">
 					<a
@@ -77,7 +83,9 @@ const Variations = () => {
 							<i>Artisan: </i>
 						</strong>
 					</a>
-					<span>someone who does skilled work with their hands</span>
+					<span>
+						someone who does <i>skilled</i> work with their hands
+					</span>
 				</div>
 			</motion.div>
 			<motion.div
