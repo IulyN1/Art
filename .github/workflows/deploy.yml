@@ -19,7 +19,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci  # Ensures a clean install
+        run: npm ci  # Clean install
 
       - name: Build React app
         run: npm run build
@@ -31,4 +31,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build  # Ensure this exists
+          folder: dist  # Change from 'build' to 'dist'
